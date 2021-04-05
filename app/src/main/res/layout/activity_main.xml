@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/danmakuContainer"
+        android:layout_width="419dp"
+        android:layout_height="251dp"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etSend"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/danmakuContainer"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/main_et_send_danmaku_bg"
+        android:gravity="center_vertical"
+        android:imeActionId="100"
+        android:imeActionLabel="发射"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:textColorHint="#999"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/danmakuContainer"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
